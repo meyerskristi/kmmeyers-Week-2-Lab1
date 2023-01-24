@@ -22,7 +22,7 @@ class Input {
         System.out.println(" You entered " + cost_per_credit_hour + " dollars per credit hour.");
 
         int creditsToGo = (requiredNumber-completednumber);
-        Double semestersLeft = Math.ceil(creditsToGo/average_credits);
+        Double semestersLeft = Math.ceil((double) creditsToGo/average_credits);
         int cost =  creditsToGo * cost_per_credit_hour;
         System.out.println(" You have " + creditsToGo + " credits left until degree completion."  );
         System.out.println(" It is going to cost you " + cost + " dollars. " );
