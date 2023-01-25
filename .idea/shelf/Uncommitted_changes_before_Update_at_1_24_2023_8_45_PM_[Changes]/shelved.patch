@@ -1,0 +1,85 @@
+Index: Lab1/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.Scanner;\r\n\r\nclass Input {\r\n    public static void main(String[] args) {\r\n\r\n        Scanner input = new Scanner(System.in);\r\n        Scanner keyboard = new Scanner(System.in);\r\n        System.out.print(\"How many credits have you completed in total for your degree ? \");\r\n        int completednumber = Integer.parseInt( keyboard.nextLine() );\r\n        System.out.println(\" You entered \" + completednumber + \" credits\");\r\n\r\n        System.out.print( \" How many credits in total are required for your degree? \");\r\n        int requiredNumber = Integer.parseInt( keyboard.nextLine() );\r\n        System.out.println(\" You entered \" + requiredNumber + \" credits\");\r\n\r\n        System.out.println(\" How many credits do you take on average per semester? \");\r\n        int average_credits = Integer.parseInt( keyboard.nextLine() );\r\n        System.out.println(\" You entered \" + average_credits + \" credits per semester.\");\r\n\r\n        System.out.println(\" How much is your cost per credit hours ? \");\r\n        int cost_per_credit_hour = Integer.parseInt( keyboard.nextLine() );\r\n        System.out.println(\" You entered \" + cost_per_credit_hour + \" dollars per credit hour.\");\r\n\r\n        int creditsToGo = (requiredNumber-completednumber);\r\n        Double semestersLeft = Math.ceil((double) creditsToGo/average_credits);\r\n        int cost =  creditsToGo * cost_per_credit_hour;\r\n        System.out.println(\" You have \" + creditsToGo + \" credits left until degree completion.\"  );\r\n        System.out.println(\" It is going to cost you \" + cost + \" dollars. \" );\r\n        System.out.print(\" Enjoy your remaining \" + semestersLeft + \" semesters!\");\r\n\r\n\r\n\r\n\r\n        // closing the scanner object\r\n        input.close();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lab1/src/Main.java b/Lab1/src/Main.java
+--- a/Lab1/src/Main.java	(revision 71ede9433ca28c2e51d18b039198317b5ce911fb)
++++ b/Lab1/src/Main.java	(date 1674604858600)
+@@ -1,6 +1,6 @@
+ import java.util.Scanner;
+ 
+-class Input {
++class Main {
+     public static void main(String[] args) {
+ 
+         Scanner input = new Scanner(System.in);
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3cc6e810-d7d6-4790-a8ed-fa60dc2265a0\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2KlVwqYDH6yKfe7PPecTE1fIn4f\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"3cc6e810-d7d6-4790-a8ed-fa60dc2265a0\" name=\"Changes\" comment=\"\" />\r\n      <created>1674549397798</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1674549397798</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 71ede9433ca28c2e51d18b039198317b5ce911fb)
++++ b/.idea/workspace.xml	(date 1674605385516)
+@@ -1,7 +1,15 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="3cc6e810-d7d6-4790-a8ed-fa60dc2265a0" name="Changes" comment="" />
++    <list default="true" id="3cc6e810-d7d6-4790-a8ed-fa60dc2265a0" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Lab1/out/production/Lab1/Input.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/Lab1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Main.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -10,6 +18,9 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
+   <component name="ProjectId" id="2KlVwqYDH6yKfe7PPecTE1fIn4f" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+@@ -18,7 +29,9 @@
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true"
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "last_opened_file_path": "C:/Users/meyers.kristi/Documents/GitHub/kmmeyers-Week-2-Lab1",
++    "settings.editor.selected.configurable": "vcs.Git"
+   }
+ }]]></component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 71ede9433ca28c2e51d18b039198317b5ce911fb)
++++ b/.idea/misc.xml	(date 1674602122564)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager">
++  <component name="ProjectRootManager" version="2" project-jdk-name="openjdk-19" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
